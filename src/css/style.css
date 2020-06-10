@@ -1,0 +1,103 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+    width: 95%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+    width: 95%;
+  }
+}
+
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  cursor: pointer;
+}
+
+/* Импорт стилей шапки */
+.navbar {
+  padding: 8px 0;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: right;
+}
+
+.navbar__button {
+  padding: 18px 30px;
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .navbar__logo {
+    width: 90px;
+  }
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 15px 26px;
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
