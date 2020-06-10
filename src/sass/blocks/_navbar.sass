@@ -6,26 +6,50 @@
     align-items: center
   &__info
     display: flex
-    align-items: center
+    // align-items: center
   &__contacts
     display: flex
     flex-direction: column
+
     text-align: right
+  &__address
+    font-size: 13px
+
+    color: $text-color
   &__button
     padding: 18px 30px
     margin-left: 30px
+
+    font-size: 13px
+    font-weight: 700
+
+    color: $text-color
   &__phone
     display: inline-block
-    margin-top: 10px
+    margin-top: 6px
+
     font-size: 20px
-    color: $text-color
+    font-weight: 700
     text-decoration: none
-@media (max-width: 768px)
+    
+    color: $text-color
+    
+@media (max-width: 767px)
   .navbar
     &__logo
-      width: 90px
+      width: 120px
     &__contacts
       display: none
     &__button
       padding: 15px 26px
+      margin-left: 0
+
       font-size: 12px
+@media (max-width: 576px)
+  .navbar
+    &__logo
+      width: 90px
+    &__button
+      font-size: 10px
+
+      border-radius: 5px
