@@ -99,6 +99,11 @@ img {
   color: #999999;
 }
 
+.input:focus {
+  border-color: #ffd200;
+  outline: none;
+}
+
 /* Импорт стилей шапки */
 .navbar {
   padding: 8px 0;
