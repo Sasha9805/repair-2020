@@ -34,6 +34,8 @@ $(document).ready(function() {
   var top = $(window).scrollTop();
   // var top = $(document).scrollTop();
   // console.log(top + ' ' + offsetTopOffer + ' ' + typeof offsetTopOffer);
+  // Если браузер Сафари
+  var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
   // Отлавливание события скролла окна документа
   $(window).scroll(function() {
     // top = $(document).scrollTop();
@@ -47,6 +49,10 @@ $(document).ready(function() {
   });
   // Клик на кнопку "вверх", переносимся в начало страницы
   $('.arrow-up').click(function() {
-    $('html').animate({scrollTop: 0}, 1000);
+    if (isSafari) {
+      $('body').animate({ scrollTop: 0 }, 1000);
+    } else {
+      $('html').animate({ scrollTop: 0 }, 1000);
+    }
   });
 });
