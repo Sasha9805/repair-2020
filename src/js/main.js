@@ -55,4 +55,25 @@ $(document).ready(function() {
       $('html').animate({ scrollTop: 0 }, 1000);
     }
   });
+
+  // Слайдер Slick
+  $('.slider').slick({
+    slidesToShow: 3,
+    prevArrow: $('.arrows__left'),
+    nextArrow: $('.arrows__right'),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
 });
