@@ -713,15 +713,15 @@ button:hover {
 
 /* Стили для блока с шагами до ремонта */
 .steps {
-  padding: 122px 0 100px;
+  padding: 122px 0 95px;
 }
 
 .steps__title {
   max-width: 660px;
   margin: 0 auto 50px;
   font-size: 30px;
-  color: black;
   line-height: 1.5;
+  color: black;
 }
 
 .steps__subtitle {
@@ -778,9 +778,9 @@ button:hover {
 .steps__text {
   max-width: 147px;
   font-size: 14px;
-  color: black;
   line-height: 1.429;
   text-align: center;
+  color: black;
 }
 
 .steps__text_width_bigger {
@@ -812,6 +812,9 @@ button:hover {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
   .steps__step:last-of-type {
@@ -819,14 +822,11 @@ button:hover {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  .steps-wrap {
-    margin: 0 auto;
-  }
 }
 
 @media (max-width: 576px) {
   .steps {
-    padding: 23px 0 40px;
+    padding: 23px 0 55px;
   }
   .steps__title {
     max-width: 240px;
@@ -857,6 +857,40 @@ button:hover {
     max-width: 128px;
     font-size: 12px;
     line-height: 1.333;
+  }
+}
+
+/* Стили для блока с заголовком */
+.slogan {
+  padding: 85px 0 95px;
+  background-color: #ffd200;
+}
+
+.slogan__title {
+  max-width: 911px;
+  margin: 0 auto;
+  font-size: 32px;
+  font-weight: normal;
+  font-family: 'Museo Sans Light', sans-serif;
+  line-height: 1.563;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .slogan__title {
+    max-width: 600px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .slogan {
+    padding: 70px 0 72px;
+  }
+  .slogan__title {
+    max-width: 257px;
+    font-size: 18px;
+    line-height: normal;
   }
 }
 

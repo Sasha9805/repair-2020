@@ -1,15 +1,19 @@
 .steps
-  padding: 122px 0 100px
+  padding: 122px 0 95px
   &__title
     max-width: 660px
     margin: 0 auto 50px
+
     font-size: 30px
-    color: $title-color
     line-height: 1.5
+
+    color: $title-color
   &__subtitle
     margin-bottom: 65px
+
     font-size: 20px
     text-align: center
+
     color: $title-color
   &-block
     display: flex
@@ -37,10 +41,12 @@
     width: 35px
   &__text
     max-width: 147px
+
     font-size: 14px
-    color: $title-color
     line-height: 1.429
     text-align: center
+
+    color: $title-color
     &_width
       &_bigger
         min-width: 151px
@@ -63,14 +69,13 @@
       flex-wrap: wrap
     &__step
       flex: 0 0 50%
+      justify-content: center
       margin-bottom: 50px
       &:last-of-type
         flex: 0 0 100%
-    &-wrap
-      margin: 0 auto
 @media (max-width: 576px)
   .steps
-    padding: 23px 0 40px
+    padding: 23px 0 55px
     &__title
       max-width: 240px
       margin-bottom: 25px
