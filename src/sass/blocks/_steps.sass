@@ -1,0 +1,94 @@
+.steps
+  padding: 122px 0 100px
+  &__title
+    max-width: 660px
+    margin: 0 auto 50px
+    font-size: 30px
+    color: $title-color
+    line-height: 1.5
+  &__subtitle
+    margin-bottom: 65px
+    font-size: 20px
+    text-align: center
+    color: $title-color
+  &-block
+    display: flex
+    justify-content: space-evenly
+    padding: 0 30px 0
+  &__step
+    display: flex
+    &:not(:last-of-type)
+      &::after
+        content: url('../img/steps/step-arrow.png')
+        position: relative
+        top: -12px
+  &__image
+    width: 100px
+    height: 100px
+    margin: 0 auto 30px
+    display: flex
+    align-items: center
+    justify-content: center
+
+    border: 3px solid $main-color
+    border-radius: 50%
+  &__img
+    height: 35px
+    width: 35px
+  &__text
+    max-width: 147px
+    font-size: 14px
+    color: $title-color
+    line-height: 1.429
+    text-align: center
+    &_width
+      &_bigger
+        min-width: 151px
+        max-width: 153px
+@media (max-width: 1200px)
+  .steps
+    &-block
+      padding: 0
+    &__step
+      &:not(:last-of-type)
+        &::after
+          content: ''
+@media (max-width: 992px)
+  .steps
+    &__title
+      font-size: 20px
+    &__subtitle
+      font-size: 16px
+    &-block
+      flex-wrap: wrap
+    &__step
+      flex: 0 0 50%
+      margin-bottom: 50px
+      &:last-of-type
+        flex: 0 0 100%
+    &-wrap
+      margin: 0 auto
+@media (max-width: 576px)
+  .steps
+    padding: 23px 0 40px
+    &__title
+      max-width: 240px
+      margin-bottom: 25px
+
+      font-size: 18px
+      line-height: normal
+    &__subtitle
+      margin-bottom: 34px
+
+      font-size: 14px
+    &-block
+      flex-direction: column
+      justify-content: flex-start
+    &__step
+      flex: 0 0 100%
+      margin-bottom: 25px
+    &__text
+      max-width: 128px
+
+      font-size: 12px
+      line-height: 1.333

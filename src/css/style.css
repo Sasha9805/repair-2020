@@ -680,6 +680,15 @@ button:hover {
   }
 }
 
+@media (max-width: 992px) {
+  .price__title {
+    font-size: 20px;
+  }
+  .price__subtitle {
+    font-size: 16px;
+  }
+}
+
 @media (max-width: 576px) {
   .price {
     padding-top: 50px;
@@ -699,6 +708,155 @@ button:hover {
   .card__title {
     margin-bottom: 12px;
     font-size: 14px;
+  }
+}
+
+/* Стили для блока с шагами до ремонта */
+.steps {
+  padding: 122px 0 100px;
+}
+
+.steps__title {
+  max-width: 660px;
+  margin: 0 auto 50px;
+  font-size: 30px;
+  color: black;
+  line-height: 1.5;
+}
+
+.steps__subtitle {
+  margin-bottom: 65px;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+}
+
+.steps-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 0 30px 0;
+}
+
+.steps__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.steps__step:not(:last-of-type)::after {
+  content: url("../img/steps/step-arrow.png");
+  position: relative;
+  top: -12px;
+}
+
+.steps__image {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 3px solid #ffd200;
+  border-radius: 50%;
+}
+
+.steps__img {
+  height: 35px;
+  width: 35px;
+}
+
+.steps__text {
+  max-width: 147px;
+  font-size: 14px;
+  color: black;
+  line-height: 1.429;
+  text-align: center;
+}
+
+.steps__text_width_bigger {
+  min-width: 151px;
+  max-width: 153px;
+}
+
+@media (max-width: 1200px) {
+  .steps-block {
+    padding: 0;
+  }
+  .steps__step:not(:last-of-type)::after {
+    content: '';
+  }
+}
+
+@media (max-width: 992px) {
+  .steps__title {
+    font-size: 20px;
+  }
+  .steps__subtitle {
+    font-size: 16px;
+  }
+  .steps-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .steps__step {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    margin-bottom: 50px;
+  }
+  .steps__step:last-of-type {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+  .steps-wrap {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .steps {
+    padding: 23px 0 40px;
+  }
+  .steps__title {
+    max-width: 240px;
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .steps__subtitle {
+    margin-bottom: 34px;
+    font-size: 14px;
+  }
+  .steps-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .steps__step {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 25px;
+  }
+  .steps__text {
+    max-width: 128px;
+    font-size: 12px;
+    line-height: 1.333;
   }
 }
 
