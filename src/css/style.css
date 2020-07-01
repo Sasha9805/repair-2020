@@ -968,12 +968,128 @@ button:hover {
 }
 
 @media (max-width: 576px) {
+  .advantages {
+    padding-bottom: 20px;
+  }
   .advantages__text {
     margin-top: 17px;
     margin-bottom: 38px;
     margin-left: 18px;
     font-size: 12px;
     line-height: 16.83px;
+  }
+}
+
+/* Стили для блока с гарантиями */
+.garanty {
+  padding-top: 85px;
+  padding-bottom: 228px;
+}
+
+.garanty__title {
+  max-width: 650px;
+  margin: 0 auto 95px;
+  font-size: 30px;
+  line-height: 1.5;
+  color: black;
+}
+
+.garanty-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.garanty__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  text-align: center;
+}
+
+.garanty__wrap {
+  padding: 20px;
+  margin-bottom: 35px;
+  min-width: 270px;
+  min-height: 360px;
+  height: 1px;
+  background-color: #f5f5f5;
+}
+
+.garanty__wrap-white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.garanty__text {
+  max-width: 290px;
+  font-size: 18px;
+  line-height: 1.333;
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .garanty__title {
+    font-size: 20px;
+  }
+  .garanty__wrap {
+    min-width: 350px;
+    margin-bottom: 28px;
+  }
+  .garanty-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .garanty__item {
+    margin-bottom: 44px;
+  }
+}
+
+@media (max-width: 576px) {
+  .garanty {
+    padding-top: 23px;
+    padding-bottom: 43px;
+  }
+  .garanty__title {
+    max-width: 220px;
+    margin-bottom: 48px;
+    font-size: 18px;
+    line-height: normal;
+  }
+  .garanty__wrap {
+    min-width: 100%;
+  }
+  .garanty__text {
+    max-width: 247px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .garanty__text_width_small {
+    max-width: 141px;
   }
 }
 
