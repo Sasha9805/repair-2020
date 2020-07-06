@@ -1113,7 +1113,7 @@ button:hover {
   padding-top: 75px;
   padding-bottom: 89px;
   background-image: url("../img/brief/brief-bg-color.jpg"), url("../img/brief/brief-bg.jpg");
-  background-size: 50%, contain;
+  background-size: 50%, 50% 100%;
   background-position: left center, center right;
   background-repeat: repeat-y, no-repeat;
 }
