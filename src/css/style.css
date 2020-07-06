@@ -74,6 +74,8 @@ button:hover {
 }
 
 .button {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 16px;
   border: none;
   border-radius: 10px;
   background-color: #ffd200;
@@ -399,8 +401,6 @@ button:hover {
   width: 100%;
   padding: 27px 0;
   margin-bottom: 25px;
-  font-family: 'Museo Sans Bold', sans-serif;
-  font-size: 16px;
 }
 
 .offer__info {
@@ -525,6 +525,9 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+  .portfolio {
+    padding: 50px 0;
+  }
   .portfolio__title {
     font-size: 20px;
   }
@@ -681,18 +684,21 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+  .price {
+    padding-top: 50px;
+  }
   .price__title {
     font-size: 20px;
   }
   .price__subtitle {
     font-size: 16px;
   }
+  .price__card:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 576px) {
-  .price {
-    padding-top: 50px;
-  }
   .price__title {
     max-width: 242px;
     margin-bottom: 22px;
@@ -701,6 +707,9 @@ button:hover {
   }
   .price__subtitle {
     font-size: 14px;
+  }
+  .price__card:last-of-type {
+    margin-bottom: 30px;
   }
   .card__text {
     padding: 30px 0 30px;
@@ -798,6 +807,9 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+  .steps {
+    padding: 50px 0 50px;
+  }
   .steps__title {
     font-size: 20px;
   }
@@ -1051,6 +1063,9 @@ button:hover {
 }
 
 @media (max-width: 992px) {
+  .garanty {
+    padding: 0;
+  }
   .garanty__title {
     font-size: 20px;
   }
@@ -1090,6 +1105,261 @@ button:hover {
   }
   .garanty__text_width_small {
     max-width: 141px;
+  }
+}
+
+/* Стили для блока с формой и ответами на вопрос */
+.brief {
+  padding-top: 75px;
+  padding-bottom: 89px;
+  background-image: url("../img/brief/brief-bg-color.jpg"), url("../img/brief/brief-bg.jpg");
+  background-size: 50%, contain;
+  background-position: left center, center right;
+  background-repeat: repeat-y, no-repeat;
+}
+
+.brief-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.brief-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.brief-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.brief__interview {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.brief__form {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding-left: 220px;
+  text-align: center;
+}
+
+.brief__input {
+  width: 100%;
+  max-width: 370px;
+  margin-bottom: 12px;
+}
+
+.brief__button {
+  height: 70px;
+  width: 100%;
+  max-width: 370px;
+  margin: 17px 0 30px;
+}
+
+.interview {
+  padding-right: 69px;
+  color: black;
+}
+
+.interview__title {
+  margin-bottom: 45px;
+}
+
+.interview__subtitle {
+  margin-bottom: 94px;
+}
+
+.interview-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.interview-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.interview-list__item:nth-of-type(-n+3) {
+  margin-bottom: 30px;
+}
+
+.interview-list__counter {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 35px;
+  height: 35px;
+  margin-right: 32px;
+  font-size: 14px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.interview-list__counter::after {
+  position: absolute;
+  right: 7px;
+  display: block;
+  content: '.';
+}
+
+.interview-list__text {
+  max-width: 379px;
+  font-size: 18px;
+}
+
+.form__title {
+  margin-bottom: 43px;
+}
+
+.form__subtitle {
+  margin-bottom: 50px;
+}
+
+.form__description {
+  display: block;
+  font-size: 15px;
+  color: #333333;
+}
+
+@media (max-width: 1200px) {
+  .brief {
+    background-size: 50%, cover;
+  }
+  .brief-title {
+    font-size: 20px;
+  }
+  .brief__form {
+    padding-left: 30px;
+  }
+  .form__title {
+    margin-bottom: 15px;
+  }
+  .form__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview {
+    padding-right: 30px;
+  }
+  .interview__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+  .interview__subtitle {
+    margin-bottom: 30px;
+  }
+  .interview-list__text {
+    max-width: 258px;
+    font-size: 14px;
+  }
+  .interview-list__counter {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .interview__title {
+    margin-top: 0;
+    line-height: normal;
+  }
+  .form__title {
+    margin-top: 0;
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .brief {
+    padding-bottom: 50px;
+    background-size: 100% 50%, cover;
+    background-position: top, bottom;
+    background-repeat: repeat-x, no-repeat;
+  }
+  .brief-block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brief__form {
+    margin-top: 80px;
+  }
+  .form__title {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .brief {
+    padding-top: 40px;
+    padding-bottom: 32px;
+    background-size: 100% 50.5%, cover;
+  }
+  .brief__input {
+    margin-bottom: 8px;
+  }
+  .brief__button {
+    margin: 0 auto 24px;
+    font-size: 14px;
+  }
+  .interview__title {
+    max-width: 220px;
+    font-size: 18px;
+  }
+  .interview__subtitle {
+    max-width: 190px;
+    margin-bottom: 38px;
+    font-size: 14px;
+    line-height: normal;
+  }
+  .interview-list__item:nth-of-type(-n+3) {
+    margin-bottom: 22px;
+  }
+  .interview-list__counter {
+    margin-right: 8px;
+  }
+  .interview-list__text {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .interview-list__text_size_l {
+    max-width: 194px;
+  }
+  .interview-list__text_size_xl {
+    min-width: 235px;
+  }
+  .form {
+    padding-left: 0;
+  }
+  .form__title {
+    width: 277px;
+    margin: 27px auto 20px;
+    font-size: 18px;
+  }
+  .form__subtitle {
+    margin-bottom: 35px;
+    font-size: 14px;
+  }
+  .form__description {
+    max-width: 135px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.714;
   }
 }
 

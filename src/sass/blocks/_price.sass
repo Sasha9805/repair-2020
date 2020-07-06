@@ -96,13 +96,16 @@
       justify-content: space-around
 @media (max-width: 992px)
   .price
+    padding-top: 50px
     &__title
       font-size: 20px
     &__subtitle
       font-size: 16px
+    &__card
+      &:last-of-type
+        margin-bottom: 0
 @media (max-width: 576px)
   .price
-    padding-top: 50px
     &__title
       max-width: 242px
       margin-bottom: 22px
@@ -111,6 +114,9 @@
       line-height: normal
     &__subtitle
       font-size: 14px
+    &__card
+      &:last-of-type
+        margin-bottom: 30px
   .card
     &__text
       padding: 30px 0 30px
