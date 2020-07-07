@@ -86,3 +86,29 @@ button
   &__left, &__right
     &:hover
       cursor: pointer
+.invalid
+  border: 1px solid red
+  font-size: 15px
+  color: $text-color
+  &:not(:last-of-type)
+    margin-bottom: 15px
+  // &:nth-child(2n)
+  //   border: none
+div.invalid
+  border: none
+  // Чтобы выводить сообщения в виде флекс, некорректная работа может быть, не то сообщение (напр., сообщение об ошибке поля ввода имени под полем ввода телефона)
+// .message
+//   display: flex
+//   div
+//     flex-basis: 50%
+//     text-align: center
+// @media (max-width: 1200px)
+//   .message
+//     display: block
+//     div
+//       text-align: left
+//       margin-bottom: 15px
+@media (max-width: 576px)
+  div.invalid
+    &:last-of-type
+      margin-bottom: 15px

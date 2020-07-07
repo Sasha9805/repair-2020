@@ -76,4 +76,95 @@ $(document).ready(function() {
       }
     ]
   });
+
+  // Валидация формы (jquery Validation Plugin)
+  $('#brief-form').validate({
+    rules: {
+      username: {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      phone: {
+        required: true
+      },
+      email: {
+        required: true,
+        email: true
+      }
+    },
+    messages: {
+      username: {
+        required: "Заполните это поле",
+        minlength: jQuery.validator.format("Как минимум {0} символов(-а) требуется!"),
+        maxlength: jQuery.validator.format("Как максимум {0} символов(-а) требуется!")
+      },
+      phone: {
+        required: "Заполните это поле",
+      }
+      // Нужно изменять background-size!!! при добавлении полей
+      // email: {
+      //   required: "Заполните это поле",
+      //   email: "Введите корректный email"
+      // }
+    },
+    errorClass: "invalid",
+    errorElement: "div"
+    // Последний элемент будет с обводкой, нужен доп. клик
+    // highlight: function () {
+    //   console.log('ok');
+    //   $('#brief-form').find('div').last().css('border', 'none');
+    // }
+  });
+  // Первая форма в блоке offer
+  $('#offer-form').validate({
+    rules: {
+      "username-offer": {
+        required: true,
+        minlength: 2,
+        maxlength: 15
+      },
+      "phone-offer": {
+        required: true
+      }
+    },
+    messages: {
+      "username-offer": {
+        required: "Заполните поле с именем",
+        minlength: jQuery.validator.format("Как минимум {0} символов(-а) требуется!"),
+        maxlength: jQuery.validator.format("Как максимум {0} символов(-а) требуется!")
+      },
+      "phone-offer": {
+        required: "Заполните поле с телефоном"
+      }
+    },
+    errorClass: "invalid",
+    errorElement: "div",
+    errorLabelContainer: ".message",
+    // wrapper: 'div',
+    // Чтобы не убиралось первое сообщение, и была равномерная ширина, см. interface.sass для описания
+    // success: function(div) {
+    //   var divUser = $('.message').children().eq(0);
+    //   var divPhone = $('.message').children().eq(1);
+    //   console.log(divUser.html());
+    //   console.log(divPhone);
+    //   var temp;
+    //   console.log(divUser.children().attr('id'));
+    //   if (divUser.children().attr('id') == "phone-offer-error") {
+    //     temp = divUser.html();
+    //     divUser.html(divPhone.html());
+    //     divPhone.html(temp);
+    //   }
+    // Эту строчку не нужно раскомментировать, если исп. флекс и замену сообщений
+      // div.addClass("valid").text("Заполнено!");
+    // },
+    // Добавление отступа для блока с сообщениями об ошибке
+    highlight: function (elem, errorClass, validClass) {
+      $(elem).addClass(errorClass).removeClass(validClass);
+      $('.message').css('margin-bottom', '28px');
+    }
+  });
+
+  // Маска для телефона
+  $('.input-phone').mask('+7 (999) 999-99-99');
 });

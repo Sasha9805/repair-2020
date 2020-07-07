@@ -86,10 +86,11 @@
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__block">
-              <input type="text" class="input offer__input" placeholder="Ваше имя">
-              <input type="tel" class="input offer__input" placeholder="Ваш телефон"
-                pattern="\+7-\d{3}-\d{2}-\d{2}-\d{3}">
+          <form action="#" class="form offer__block" id="offer-form">
+              <input type="text" name="username-offer" class="input offer__input" placeholder="Ваше имя">
+              <!-- <input type="tel" name="phone-offer" class="input offer__input input-phone" placeholder="Ваш телефон" pattern="\+7-\d{3}-\d{2}-\d{2}-\d{3}"> -->
+              <input type="tel" name="phone-offer" class="input offer__input input-phone" placeholder="Ваш телефон" required>
+              <div class="message"></div>
             <button class="button offer__button">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__block -->
@@ -441,9 +442,11 @@
             <!-- /.form__title -->
             <span class="form__subtitle brief-subtitle">Для этого заполните форму ниже</span>
             <!-- /.form__subtitle -->
-            <form action="#">
-              <input type="text" class="input brief__input" placeholder="Ваше имя">
-              <input type="tel" class="input brief__input" placeholder="Ваш телефон">
+            <form action="#" id="brief-form">
+              <!-- <input type="text" class="input brief__input" placeholder="Ваше имя" minlength="2" maxlength="5" required> -->
+              <input type="text" name="username" class="input brief__input" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input brief__input input-phone" placeholder="Ваш телефон">
+              <!-- <input type="email" name="email" class="input brief__input" placeholder="Ваш email"> -->
               <button class="button brief__button">Рассчитать стоимость</button>
               <!-- /.button brief__button -->
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
@@ -475,6 +478,8 @@
   <!-- /.arrow-up -->
 
   <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/main.js"></script>
 
