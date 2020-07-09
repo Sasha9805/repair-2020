@@ -1,0 +1,90 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  left: 0
+  top: 0
+
+  width: 50%
+.contacts
+  flex-basis: 50%
+  padding-top: 69px
+  padding-left: 215px
+  &-block
+    display: flex
+    justify-content: flex-end
+  &__title
+    margin-bottom: 93px
+
+    +bold
+    font-size: 22px
+    line-height: 1.5
+
+    color: $title-color
+  &-list
+    list-style-type: none
+    padding: 0
+    &__item
+      display: flex
+      // align-items: center
+      margin-bottom: 34px
+    &__icon
+      display: inline-block
+      width: 20px
+      height: 20px
+      margin-right: 23px
+    &__text
+      font-size: 16px
+      line-height: 27px
+
+      color: $title-color
+      &-bold
+        display: block
+        max-width: 140px
+        +bold
+      &-link
+        display: block
+        +bold
+        text-decoration: none
+
+        color: $title-color
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 70px
+    &__title
+      font-size: 20px
+@media (max-width: 767px)
+  .footer
+    display: flex
+    flex-direction: column
+  .map
+    position: static
+
+    width: 100%
+    order: 13
+  .contacts
+    padding: 45px 0 23px
+    &__title
+      margin-bottom: 35px
+
+      text-align: center
+    &-list
+      max-width: 200px
+      margin-left: auto
+      margin-right: auto
+    &-block
+      display: block
+@media (max-width: 576px)
+  .contacts
+    &__title
+      max-width: 242px
+
+      text-align: left
+      font-size: 18px
+      line-height: normal
+    &-list
+      margin: 0
+      &__item
+        margin-bottom: 35px
+      &__icon
+        margin-right: 10px
