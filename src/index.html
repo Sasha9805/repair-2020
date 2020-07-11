@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/animate.min.css">
   <link rel="stylesheet" href="css/slick.css">
   <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
   <link rel="stylesheet" href="css/style.css">
@@ -14,11 +15,11 @@
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
-        <div class="navbar__logo">
+        <div class="navbar__logo wow animate__fadeInLeft">
           <img src="img/logo.png" alt="Логотип">
         </div>
         <!-- /.navbar__logo -->
-        <div class="navbar__info">
+        <div class="navbar__info wow animate__fadeInRight">
           <div class="navbar__contacts">
             <span class="navbar__address">Калуга, Москва, МО</span>
             <a href="tel:+74954225131" class="phone navbar__phone">+7 (495) 42-251-31</a>
@@ -47,19 +48,19 @@
               с гарантией качества, прописанной в договоре
             </span>
             <ul class="hero-list">
-              <li class="hero-list__item">
+              <li class="hero-list__item wow animate__backInDown" data-wow-delay="0.2s">
                 <div class="hero-list__image">
                   <img src="img/hero/clock.png" alt="clock">
                 </div>
                 <span class="hero-list__text">Точно соблюдаем сроки</span>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow animate__backInRight" data-wow-delay="0.4s">
                 <div class="hero-list__image">
                   <img src="img/hero/calculator.png" alt="calculator">
                 </div>
                 <span class="hero-list__text">Рассчитаем смету на работы и&nbsp;материалы в день обращения</span>
               </li>
-              <li class="hero-list__item">
+              <li class="hero-list__item wow animate__backInUp" data-wow-delay="0.6s">
                 <div class="hero-list__image">
                   <img src="img/hero/paint-board.png" alt="paint-board">
                 </div>
@@ -87,14 +88,14 @@
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
           <form action="#" class="form offer__block" id="offer-form">
-              <input type="text" name="username-offer" class="input offer__input" placeholder="Ваше имя">
+              <input type="text" name="username-offer" class="input offer__input wow animate__bounceInLeft" placeholder="Ваше имя">
               <!-- <input type="tel" name="phone-offer" class="input offer__input input-phone" placeholder="Ваш телефон" pattern="\+7-\d{3}-\d{2}-\d{2}-\d{3}"> -->
-              <input type="tel" name="phone-offer" class="input offer__input input-phone" placeholder="Ваш телефон" required>
+              <input type="tel" name="phone-offer" class="input offer__input input-phone wow animate__bounceInRight" placeholder="Ваш телефон" required>
               <div class="message"></div>
-            <button class="button offer__button">Получить бесплатный дизайн-проект</button>
+            <button class="button offer__button wow animate__bounceInUp">Получить бесплатный дизайн-проект</button>
           </form>
           <!-- /.form offer__block -->
-          <div class="offer__info">
+          <div class="offer__info wow animate__bounceInUp">
             <div class="offer__time">
               Наш менеджер перезвонит Вам в&nbsp;течение 60 секунд
             </div>
@@ -167,7 +168,7 @@
         <span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
         <!-- /.section-subtitle price__subtitle -->
         <div class="cards">
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.1s">
             <div class="card__image"><img class="card__img" src="img/price/bathroom.jpg" alt="bathroom"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -179,7 +180,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.2s">
             <div class="card__image"><img class="card__img" src="img/price/living-room.jpg" alt="living-room"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -191,7 +192,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.3s">
             <div class="card__image"><img class="card__img" src="img/price/office.jpg" alt="office"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -203,7 +204,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.1s">
             <div class="card__image"><img class="card__img" src="img/price/buildings.jpg" alt="buildings"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -215,7 +216,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.2s">
             <div class="card__image"><img class="card__img" src="img/price/kitchen.jpg" alt="kitchen"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -227,7 +228,7 @@
             <!-- /.card__text -->
           </div>
           <!-- /.card -->
-          <div class="card price__card">
+          <div class="card price__card wow animate__fadeInUp" data-wow-delay="0.3s">
             <div class="card__image"><img class="card__img" src="img/price/houses.jpg" alt="houses"></div>
             <!-- /.card__image -->
             <div class="card__text">
@@ -253,7 +254,7 @@
         <span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
         <!-- /.section-subtitle steps__subtitle -->
         <div class="steps-block">
-          <div class="steps__step">
+          <div class="steps__step wow animate__fadeInLeft" data-wow-delay="0.2s">
             <div class="steps-wrap">
               <div class="steps__image"><img src="img/steps/woman-with-headset.png" alt="woman-with-headset"
                   class="steps__img"></div>
@@ -264,7 +265,7 @@
             <!-- /.steps__wrap -->
           </div>
           <!-- /.steps__step -->
-          <div class="steps__step">
+          <div class="steps__step wow animate__fadeInLeft" data-wow-delay="0.3s">
             <div class="steps-wrap">
               <div class="steps__image"><img src="img/steps/clock.png" alt="clock" class="steps__img"></div>
               <!-- /.steps__image -->
@@ -275,7 +276,7 @@
             <!-- /.steps__wrap -->
           </div>
           <!-- /.steps__step -->
-          <div class="steps__step">
+          <div class="steps__step wow animate__fadeInLeft" data-wow-delay="0.4s">
             <div class="steps-wrap">
               <div class="steps__image"><img src="img/steps/money.png" alt="money" class="steps__img"></div>
               <!-- /.steps__image -->
@@ -285,7 +286,7 @@
             <!-- /.steps__wrap -->
           </div>
           <!-- /.steps__step -->
-          <div class="steps__step">
+          <div class="steps__step wow animate__fadeInLeft" data-wow-delay="0.5s">
             <div class="steps-wrap">
               <div class="steps__image"><img src="img/steps/document.png" alt="document" class="steps__img"></div>
               <!-- /.steps__image -->
@@ -295,7 +296,7 @@
             <!-- /.steps__wrap -->
           </div>
           <!-- /.steps__step -->
-          <div class="steps__step">
+          <div class="steps__step wow animate__fadeInLeft" data-wow-delay="0.6s">
             <div class="steps-wrap">
               <div class="steps__image"><img src="img/steps/calendar.png" alt="calendar" class="steps__img"></div>
               <!-- /.steps__image -->
@@ -324,21 +325,21 @@
     <section class="section advantages">
       <div class="container">
         <div class="advantages-block">
-          <div class="advantages__item">
+          <div class="advantages__item wow animate__bounceInLeft" data-wow-delay="0.6s">
             <div class="advantages__text">Поможем закупить все материалы по&nbsp;оптовым ценам у проверенных поставщиков</div>
             <!-- /.advantages__text -->
             <div class="advantages__image"><img class="advantages__img" src="img/advantages/man-wholesale.png" alt="man-wholesale"></div>
             <!-- /.advantages__image -->
           </div>
           <!-- /.advantages__item -->
-          <div class="advantages__item">
+          <div class="advantages__item wow animate__bounceInUp" data-wow-delay="0.8s">
             <div class="advantages__text">Мы дадим Вам <span class="advantages__text_bold">максимальные скидки</span> у&nbsp;наших партнеров для закупки материалов оптом</div>
             <!-- /.advantages__text -->
             <div class="advantages__image"><img class="advantages__img" src="img/advantages/man-sale.png" alt="man-sale"></div>
             <!-- /.advantages__image -->
           </div>
           <!-- /.advantages__item -->
-          <div class="advantages__item">
+          <div class="advantages__item wow animate__bounceInRight" data-wow-delay="1s">
             <div class="advantages__text">Все, что не сможете найти в городе - поможем заказать <span class="advantages__text_bold">у проверенных поставщиков</span></div>
             <!-- /.advantages__text -->
             <div class="advantages__image"><img class="advantages__img" src="img/advantages/man-provider.png" alt="man-provider"></div>
@@ -357,7 +358,7 @@
         <h2 class="section-title garanty__title">Все наши гарантийные обязательства подробно и прозрачно описаны в договоре</h2>
         <!-- /.section-title garanty__title -->
         <div class="garanty-block">
-          <div class="garanty__item">
+          <div class="garanty__item wow animate__fadeInDown" data-wow-delay="0.3s">
             <div class="garanty__wrap">
               <div class="garanty__wrap-white">
                 <img src="img/garanty/garanty-quality.jpg" alt="garanty-quality">
@@ -368,7 +369,7 @@
             <!-- /.garanty__text -->
           </div>
           <!-- /.garanty__item -->
-          <div class="garanty__item">
+          <div class="garanty__item wow animate__fadeInDown" data-wow-delay="0.6s">
             <div class="garanty__wrap">
               <div class="garanty__wrap-white">
                 <img src="img/garanty/garanty-price.jpg" alt="garanty-price">
@@ -379,7 +380,7 @@
             <!-- /.garanty__text -->
           </div>
           <!-- /.garanty__item -->
-          <div class="garanty__item">
+          <div class="garanty__item wow animate__fadeInDown" data-wow-delay="0.9s">
             <div class="garanty__wrap">
               <div class="garanty__wrap-white">
                 <img src="img/garanty/garanty-deadline.jpg" alt="garanty-deadline">
@@ -404,14 +405,14 @@
             <h3 class="interview__title brief-title">Мы можем озвучить Вам примерную стоимость работы и материалов по телефону</h3>
             <span class="interview__subtitle brief-subtitle">Для этого нужно ответить на 4 вопроса:</span>
             <ul class="interview-list">
-              <li class="interview-list__item">
+              <li class="interview-list__item wow animate__zoomIn" data-wow-delay="0.1s">
                 <span class="interview-list__counter">1</span> 
                 <!-- /.interview-list__counter -->
                 <span class="interview-list__text">Какова площадь помещения?</span>
                 <!-- /.interview-list__text -->
               </li>
               <!-- /.interview-list__item -->
-              <li class="interview-list__item">
+              <li class="interview-list__item wow animate__zoomIn" data-wow-delay="0.3s">
                 <span class="interview-list__counter">2</span> 
                 <!-- /.interview-list__counter -->
                 <span class="interview-list__text interview-list__text_size_xl">У Вас новостройка или вторичное
@@ -419,14 +420,14 @@
                 <!-- /.interview-list__text -->
               </li>
               <!-- /.interview-list__item -->
-              <li class="interview-list__item">
+              <li class="interview-list__item wow animate__zoomIn" data-wow-delay="0.5s">
                 <span class="interview-list__counter">3</span>
                  <!-- /.interview-list__counter -->
                 <span class="interview-list__text interview-list__text_size_l">Где находится помещение, в котором будет производиться ремонт?</span>
                  <!-- /.interview-list__text -->
               </li>
               <!-- /.interview-list__item -->
-              <li class="interview-list__item">
+              <li class="interview-list__item wow animate__zoomIn" data-wow-delay="0.7s">
                 <span class="interview-list__counter">4</span>
                  <!-- /.interview-list__counter -->
                 <span class="interview-list__text">Назначение помещения?</span>
@@ -444,10 +445,10 @@
             <!-- /.form__subtitle -->
             <form action="#" id="brief-form">
               <!-- <input type="text" class="input brief__input" placeholder="Ваше имя" minlength="2" maxlength="5" required> -->
-              <input type="text" name="username" class="input brief__input" placeholder="Ваше имя">
-              <input type="tel" name="phone" class="input brief__input input-phone" placeholder="Ваш телефон">
+              <input type="text" name="username" class="input brief__input wow animate__backInDown" data-wow-delay="0.2s" placeholder="Ваше имя">
+              <input type="tel" name="phone" class="input brief__input input-phone wow animate__backInDown" data-wow-delay="0.4s" placeholder="Ваш телефон">
               <!-- <input type="email" name="email" class="input brief__input" placeholder="Ваш email"> -->
-              <button class="button brief__button">Рассчитать стоимость</button>
+              <button class="button brief__button wow animate__backInDown" data-wow-delay="0.6s">Рассчитать стоимость</button>
               <!-- /.button brief__button -->
               <span class="form__description">Мы перезвоним Вам в течение 60 секунд</span>
               <!-- /.form__description -->
@@ -482,7 +483,7 @@
           <h3 class="contacts__title">Приезжайте к нам в гости! Проконсультируем Вас по&nbsp;всем&nbsp;вопросам ремонта</h3>
           <!-- /.contacts__title --> 
           <ul class="contacts-list">
-            <li class="contacts-list__item">
+            <li class="contacts-list__item wow animate__rollIn">
               <span class="contacts-list__icon">
                 <img src="img/footer/map-placeholder.png" alt="map">
               </span> 
@@ -493,7 +494,7 @@
               <!-- /.contacts-list__text -->
             </li>
             <!-- /.contacts-list__item -->
-            <li class="contacts-list__item">
+            <li class="contacts-list__item wow animate__rollIn">
               <span class="contacts-list__icon">
                 <img src="img/footer/clock-with-white-face.png" alt="clock">
               </span> 
@@ -504,7 +505,7 @@
               <!-- /.contacts-list__text -->
             </li>
             <!-- /.contacts-list__item -->
-            <li class="contacts-list__item">
+            <li class="contacts-list__item wow animate__rollIn">
               <span class="contacts-list__icon">
                 <img src="img/footer/phone-call-button.png" alt="phone">
               </span> 
@@ -544,6 +545,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.maskedinput.min.js"></script>
   <script src="js/slick.min.js"></script>
+  <script src="js/wow.min.js"></script>
   <script src="js/main.js"></script>
 
 </body>

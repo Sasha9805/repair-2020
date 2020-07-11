@@ -167,4 +167,16 @@ $(document).ready(function() {
 
   // Маска для телефона
   $('.input-phone').mask('+7 (999) 999-99-99');
+
+  // Анимация wow.js; animate.css v4
+  wow = new WOW(
+    {
+      boxClass: 'wow',      // default
+      animateClass: 'animate__animated', // default
+      offset: 0,          // default
+      mobile: true,       // default
+      live: true        // default
+    }
+  )
+  wow.init();
 });
