@@ -107,7 +107,8 @@
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-          <form action="#" class="form offer__block" id="offer-form" onsubmit="ym(65582935,'reachGoal','form-1'); return true;">
+          <!-- <form action="#" class="form offer__block" id="offer-form" onsubmit="ym(65582935,'reachGoal','form-1'); return true;"> -->
+          <form action="#" class="form offer__block" id="offer-form" onsubmit="if (document.querySelector('.message').innerHTML == '' && document.querySelectorAll('.offer__input')[0].value != '' && document.querySelectorAll('.offer__input')[1].value != '') {ym(65582935,'reachGoal','form-1'); return true;}">
               <input type="text" name="username-offer" class="input offer__input wow animate__bounceInLeft" placeholder="Ваше имя">
               <!-- <input type="tel" name="phone-offer" class="input offer__input input-phone" placeholder="Ваш телефон" pattern="\+7-\d{3}-\d{2}-\d{2}-\d{3}"> -->
               <input type="tel" name="phone-offer" class="input offer__input input-phone wow animate__bounceInRight" placeholder="Ваш телефон" required>
