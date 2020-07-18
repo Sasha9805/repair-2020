@@ -42,9 +42,9 @@ $(document).ready(function() {
     top = $(window).scrollTop();
     // console.log(top);
     if (top >= (offsetTopOffer - 400)) {
-      $('.arrow-up').addClass('arrow-up_visible')
+      $('.arrow-up').addClass('arrow-up_visible');
     } else {
-      $('.arrow-up').removeClass('arrow-up_visible')
+      $('.arrow-up').removeClass('arrow-up_visible');
     }
   });
   // Клик на кнопку "вверх", переносимся в начало страницы
@@ -177,6 +177,6 @@ $(document).ready(function() {
       mobile: true,       // default
       live: true        // default
     }
-  )
+  );
   wow.init();
 });
